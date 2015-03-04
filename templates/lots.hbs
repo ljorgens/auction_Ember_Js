@@ -1,0 +1,14 @@
+<h1>Lots</h1>
+
+<form>
+  <div class="form-group">
+    {{input id="lotName" value=lotName class="form-control" placeholder="Enter Name of Your Lot"}}
+  </div>
+  <button {{action "save"}} class='btn btn-default'>Commit Lot</button>
+</form>
+
+<ul>
+  {{#each}}
+  <li>{{name}}</li>
+  {{/each}}
+</ul>

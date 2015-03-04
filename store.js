@@ -1,3 +1,18 @@
+var lot = [
+  {
+    name: 'Burritos'
+  },
+  {
+    name: 'Burgers'
+  },
+  {
+    name: 'Tacos'
+  },
+  {
+    name: 'Salads'
+  }
+];
+
 var food = [
   {
     vendor: "Big Ass Sandwiches",
