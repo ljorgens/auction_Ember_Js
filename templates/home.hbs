@@ -1,1 +1,16 @@
-<h1>Hello!</h1>
+<h1>Home</h1>
+<h2>Here are our Vendors!</h2>
+
+
+  <ul>
+    {{#each}}
+    <li>
+      {{vendor}} - {{lot}}
+      <ul>
+        {{#each item}}
+          <li>{{#link-to "itemDetails"}}{{description}}{{/link-to}} - {{story}}</li>
+        {{/each}}
+      </ul>
+    </li>
+    {{/each}}
+  </ul>
