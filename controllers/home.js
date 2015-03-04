@@ -1,11 +1,17 @@
-Apps.HomeController= Ember.ObjectController.extend({
-  isShowing: false;
+Apps.HomeController = Ember.ArrayController.extend({
+  itemController: 'homes'
+
+});
+
+Apps.HomesController= Ember.ObjectController.extend({
+  isShowing: false,
   actions: {
-    show: function(){
-      this.set('isShowing', true);
-    },
-    hide: function(){
-      this.set('isShowing', false);
+    showHide: function(){
+      if (this.isShowing) {
+        this.set('isShowing', false);
+      } else {
+        this.set('isShowing', true);
+      }
     }
   }
 });

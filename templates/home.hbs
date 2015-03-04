@@ -4,12 +4,12 @@
 
   <ul>
     {{#each}}
-    <li {{action "show"}}>
+    <li {{action "showHide"}}>
       {{vendor}} - {{lot}}
       {{#if isShowing}}
         <ul>
           {{#each thing in item}}
-            <li {{action "hide"}}>{{#link-to "itemDetails" thing}}{{thing.description}}{{/link-to}} - {{thing.story}}</li>
+            <li>{{#link-to "itemDetails" thing}}{{thing.description}}{{/link-to}} - {{thing.story}}</li>
           {{/each}}
         </ul>
       {{/if}}
