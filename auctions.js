@@ -1,0 +1,1 @@
+Auctions = Ember.Application.create();
