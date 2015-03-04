@@ -1,5 +1,5 @@
 Apps.ItemDetailsRoute = Ember.Route.extend({
   model:function(params) {
-    return this.food.item.find("itemDetails", params.bidNumber);
+    return food.item.findBy("itemDetails", params.bidNumber);
   }
 });

@@ -1,6 +1,8 @@
 <h1>Item Details</h1>
-<ul>
-  {{#each food}}
-  <li>{{lot}}</li>
-  {{/each}}
-</ul>
+
+<p>{{description}}</p>
+<p>{{bidNumber}}</p>
+<p>${{price}}</p>
+<p>{{story}}</p>
+<p>{{year}}</p>
+<img {{bind-attr src=image}} width='250px'>
