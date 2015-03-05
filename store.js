@@ -1,15 +1,15 @@
 var lot = [
   {
-    name: 'Burritos'
+    lotName: 'Burritos'
   },
   {
-    name: 'Burgers'
+    lotName: 'Burgers'
   },
   {
-    name: 'Tacos'
+    lotName: 'Tacos'
   },
   {
-    name: 'Salads'
+    lotName: 'Salads'
   }
 ];
 
