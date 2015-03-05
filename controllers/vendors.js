@@ -1,23 +1,25 @@
 Apps.VendorsController = Ember.ArrayController.extend({
   actions:{
     save: function(){
-      if (this.url === undefined) {
+      if (this.get('url') === undefined) {
         url = "http://cdn.vectorstock.com/i/composite/54,85/office-stamp-pending-vector-5485.jpg";
       } else {
-        url = this.url
+        url = this.get('url')
       }
 
-      food.addObject({
-        vendor: this.vendorName,
-        lot: this.lotName,
+      var newVendor = this.store.createRecord('home',{
+        vendor: this.get('vendorName'),
+        lot: this.get('lotName'),
         item: [{
-          description: this.description,
-          price: this.price,
-          story: this.story,
-          year: this.year,
+          description: this.get('description'),
+          price: this.get('price'),
+          story: this.get('story'),
+          year: this.get('year'),
           image: url
         }]
       });
+      newVendor.save();
+      this.transitionToRoute('home');
     }
   }
 });

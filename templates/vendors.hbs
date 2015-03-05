@@ -4,11 +4,11 @@
     {{input value=vendorName class="form-control" placeholder="Enter Your Company Name!"}}
 
     {{view "select" content=model
-        optionValuePath="content.lotName"
-        optionLabelPath="content.lotName"
+        optionValuePath="content.name"
+        optionLabelPath="content.name"
      value=lotName}}
 
-    Or <a href="#/lots"> Enter a new Lot! </a>
+    Or <a href="#/lot"> Enter a new Lot! </a>
 
     <div class="form-group">
       {{input value=description class='form-control' placeholder='Enter a Item Name'}}

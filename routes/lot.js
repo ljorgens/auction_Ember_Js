@@ -1,4 +1,4 @@
-Apps.VendorsRoute = Ember.Route.extend({
+Apps.LotRoute = Ember.Route.extend({
   model:function (){
     return this.store.find('lot');
   }

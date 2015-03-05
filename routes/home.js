@@ -1,5 +1,5 @@
 Apps.HomeRoute = Ember.Route.extend({
   model:function() {
-    return food;
+    return this.store.find('home');
   }
 });
