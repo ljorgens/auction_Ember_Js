@@ -6,8 +6,8 @@
       {{vendor}} - {{lot}}
       {{#if isShowing}}
         <ul>
-          {{#each thing in item}}
-            <li>{{#link-to "itemDetails" thing}}{{thing.description}}{{/link-to}} - {{thing.story}}</li>
+          {{#each food in item}}
+            <li>{{#link-to "itemDetails" food}}{{food.description}}{{/link-to}} - {{food.item_id}}{{food.story}}</li>
           {{/each}}
         </ul>
       {{/if}}
